@@ -24,7 +24,7 @@ public class Fib_big_even_odd {
         }
     }
 
-    public static BigInteger fibonacci(int n) {
+    public static BigInteger fib_eo(int n) {
         if (n == 0) {
             return BigInteger.ZERO;
         }
@@ -38,7 +38,7 @@ public class Fib_big_even_odd {
     }
 
     public static void main(String[] args) {
-        String a = fibonacci(841645).remainder(BigInteger.valueOf(10)).toString();
+        String a = fib_eo(841645).remainder(BigInteger.valueOf(10)).toString();
         int i = Integer.parseInt(a.trim());
         if (i % 2 == 0){
             System.out.println("even");
